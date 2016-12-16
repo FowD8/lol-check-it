@@ -1,0 +1,20 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.logo {
+  width: 20px;
+  height: 20px;
+}
+
+header {
+  background: none;
+  
+  .container { padding-top: 100px; }
+  
+  .img-responsive {
+    max-width: 200px;
+    max-height: 100%;
+  }
+}
+

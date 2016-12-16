@@ -1,0 +1,20 @@
+.col-lg-2.summoner-info
+  .row
+    .col-lg-12.container
+      .card
+        %figure.splash-border.front{class: "#{summoner[:rank]}"}
+          .inner-container
+            = champion_splash(summoner[:champion_id])
+            
+            .champion-name.text-center{class: "#{color}"}
+              = champion_name_from_id(summoner[:champion_id])
+            
+            .summoner-name-top-border.text-center{class: "#{color}"}
+              .summoner-name= summoner[:summoner_name]
+              
+            .summoner-spells.text-center
+              = summoner_spell summoner[:spell1_id]
+              = summoner_spell summoner[:spell2_id]
+        
+        %figure.splash-border.back{class: "#{summoner[:rank]}"}
+          .inner-container

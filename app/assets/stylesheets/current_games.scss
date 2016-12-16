@@ -1,0 +1,170 @@
+// Place all the styles related to the CurrentGames controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.current_games { 
+  padding-top: 50px;
+  color: #9d9d9d;
+  
+  .spacer{ height: 50px; }
+  
+  .summoner-info {
+    .splash-border {
+      padding: 5px;
+      
+      .champion-name {
+        font-size: 18px;
+        padding: 5px 0;
+        position: relative;
+        margin-top: -35px;
+        
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 20%, rgba(0,0,0,0.65) 100%);
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 20%,rgba(0,0,0,0.65) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 20%,rgba(0,0,0,0.65) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  
+        
+        &.red { color: #B22126; }
+        &.blue { color: #5890CD; }
+      }
+      
+      .summoner-spells {
+        padding: 5px 0;
+        .summoner-spell { 
+          max-width: 25px; 
+          margin: 0 5px;
+        }
+      }
+      
+      .inner-container {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .inner-container, .summoner-name { background: #000; }
+      
+      .splash-image {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      
+      .summoner-name-top-border {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        
+        &.red {
+          background: -moz-linear-gradient(left,  rgba(178,33,38,0.1) 0%, rgba(178,33,38,1) 50%, rgba(178,33,38,0.1) 100%);
+          background: -webkit-linear-gradient(left,  rgba(178,33,38,0.1) 0%,rgba(178,33,38,1) 50%,rgba(178,33,38,0.1) 100%);
+          background: linear-gradient(to right,  rgba(178,33,38,0.1) 0%,rgba(178,33,38,1) 50%,rgba(178,33,38,0.1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ab22126', endColorstr='#1ab22126',GradientType=1 );
+        }
+        
+        &.blue {
+          background: -moz-linear-gradient(left,  rgba(88,144,205,0.1) 0%, rgba(88,144,205,1) 50%, rgba(88,144,205,0.1) 100%);
+          background: -webkit-linear-gradient(left,  rgba(88,144,205,0.1) 0%,rgba(88,144,205,1) 50%,rgba(88,144,205,0.1) 100%);
+          background: linear-gradient(to right,  rgba(88,144,205,0.1) 0%,rgba(88,144,205,1) 50%,rgba(88,144,205,0.1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a5890cd', endColorstr='#1a5890cd',GradientType=1 );
+        }
+      }
+      
+      &.unranked {
+        background: black;
+      }
+      
+      &.BRONZE {
+        background: #bca47a;
+        background: -moz-linear-gradient(45deg,  #bca47a 0%, #46270b 50%);
+        background: -webkit-linear-gradient(45deg,  #bca47a 0%,#46270b 50%);
+        background: linear-gradient(45deg,  #bca47a 0%,#46270b 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bca47a', endColorstr='#46270b',GradientType=1 );
+      }
+      
+      &.SILVER {
+        background: #cedfcd;
+        background: -moz-linear-gradient(45deg,  #cedfcd 0%, #556562 75%);
+        background: -webkit-linear-gradient(45deg,  #cedfcd 0%,#556562 75%);
+        background: linear-gradient(45deg,  #cedfcd 0%,#556562 75%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedfcd', endColorstr='#556562',GradientType=1 );
+      }
+      
+      &.silver2 {
+        background: #dfeae7;
+        background: -moz-linear-gradient(45deg,  #dfeae7 0%, #93a99c 50%);
+        background: -webkit-linear-gradient(45deg,  #dfeae7 0%,#93a99c 50%);
+        background: linear-gradient(45deg,  #dfeae7 0%,#93a99c 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeae7', endColorstr='#93a99c',GradientType=1 );
+      }
+      
+      &.GOLD {
+        background: #e9e79e;
+        background: -moz-linear-gradient(45deg,  #e9e79e 0%, #b57f34 50%);
+        background: -webkit-linear-gradient(45deg,  #e9e79e 0%,#b57f34 50%);
+        background: linear-gradient(45deg,  #e9e79e 0%,#b57f34 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e79e', endColorstr='#b57f34',GradientType=1 );
+      }
+      
+      &.PLATINUM {
+        background: #62cccc;
+        background: -moz-linear-gradient(45deg,  #62cccc 0%, #01534c 50%);
+        background: -webkit-linear-gradient(45deg,  #62cccc 0%,#01534c 50%);
+        background: linear-gradient(45deg,  #62cccc 0%,#01534c 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62cccc', endColorstr='#01534c',GradientType=1 );
+      }
+      
+      &.DIAMOND {
+        background: #85dbfe;
+        background: -moz-linear-gradient(45deg,  #85dbfe 0%, #2055ab 50%);
+        background: -webkit-linear-gradient(45deg,  #85dbfe 0%,#2055ab 50%);
+        background: linear-gradient(45deg,  #85dbfe 0%,#2055ab 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85dbfe', endColorstr='#2055ab',GradientType=1 );
+      }
+      
+      &.MASTER {
+        background: #9fb6b5;
+        background: -moz-linear-gradient(45deg,  #9fb6b5 0%, #238b79 50%, #e0b545 100%);
+        background: -webkit-linear-gradient(45deg,  #9fb6b5 0%,#238b79 50%,#e0b545 100%);
+        background: linear-gradient(45deg,  #9fb6b5 0%,#238b79 50%,#e0b545 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fb6b5', endColorstr='#e0b545',GradientType=1 );
+      }
+      
+      &.CHALLENGER {
+        background: #bac000;
+        background: -moz-linear-gradient(45deg,  #bac000 0%, #20a2ed 50%, #c47d28 100%);
+        background: -webkit-linear-gradient(45deg,  #bac000 0%,#20a2ed 50%,#c47d28 100%);
+        background: linear-gradient(45deg,  #bac000 0%,#20a2ed 50%,#c47d28 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bac000', endColorstr='#c47d28',GradientType=1 );
+      }
+    }
+    
+    // 3d flip
+    .container {
+      padding: 0;
+      width: 165px;
+      height: 350px;
+      position: relative;
+      perspective: 800px;
+      
+      .card {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+        cursor: pointer;
+        
+        figure {
+          margin: 0;
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+        }
+        
+        .back { transform: rotateY( 180deg ); }
+        &.flipped { transform: rotateY( 180deg ); }
+      }
+    }
+  }
+}
+

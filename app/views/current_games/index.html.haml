@@ -1,0 +1,17 @@
+.container.current_games
+  .row
+    .col-lg-1
+    - @summoners_red.each do |summoner|
+      = render partial: "summoner_info", locals: {summoner: summoner, color: "blue"}
+  
+  .spacer
+  
+  .row
+    .col-lg-1
+    - @summoners_blue.each do |summoner|
+      = render partial: "summoner_info", locals: {summoner: summoner, color: "red"}
+      
+:javascript
+  $('.card').click(function(){
+  $(this).toggleClass('flipped');
+  });

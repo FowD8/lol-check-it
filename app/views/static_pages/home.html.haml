@@ -1,0 +1,16 @@
+/ Header
+%header
+  .container
+    .row
+      .col-lg-12
+        = image_tag "octagon.png", class: "img-responsive"
+          
+    .row
+      .col-lg-6.col-lg-offset-3
+        = form_tag current_games_path, :method => 'get', class: "input-group", enforce_utf8: false do
+          = text_field_tag  :search, 
+                            params[:search], 
+                            placeholder: "Enter Summoner's Name",
+                            class: "form-control input-lg"
+          %span.input-group-btn
+            = submit_tag "Search", :name => nil, class: "btn btn-success btn-lg"
